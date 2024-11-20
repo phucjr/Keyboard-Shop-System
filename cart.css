@@ -1,0 +1,146 @@
+/* Reset một số thuộc tính mặc định cho nhất quán trên các trình duyệt */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Font chữ sử dụng Roboto */
+    background-color: #ffffff; /* Màu nền xám nhạt */
+    color: #000000; /* Màu chữ xám đậm */
+    line-height: 1.6; /* Khoảng cách dòng */
+}
+
+.container-fluid {
+    width: 90%; /* Chiều rộng container là 90% của màn hình */
+    max-width: 1200px; /* Chiều rộng tối đa là 1200px */
+    margin: 0 auto; /* Canh giữa container */
+    padding: 20px; /* Khoảng cách bên trong container */
+}
+
+.shopping-cart, .Price {
+    background: #fff; /* Màu nền trắng */
+    padding: 20px; /* Khoảng cách bên trong */
+    border-style:unset; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    margin: 20px; /* Khoảng cách phía dưới */
+}
+
+.shopping-cart h6, .Price h3 {
+    font-size: 24px; /* Kích thước chữ lớn */
+    font-weight: 600; /* Độ dày chữ */
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+    text-align: center;
+    color: #000000; /* Màu chữ xám đậm */
+}
+
+.shopping-cart hr, .Price hr {
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+.cart-items:last-child {
+    border-bottom: none; /* Phần tử cuối không có viền dưới */
+}
+
+.cart-item img {
+    width: 100px; /* Chiều rộng ảnh */
+    height: auto; /* Chiều cao tự động theo tỷ lệ */
+    border-radius: 8px; /* Bo góc ảnh */
+}
+
+
+button {
+    background: none; /* Không nền */
+    border: none; /* Không viền */
+    font-size: 18px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột chỉ tay */
+    color: #333; /* Màu chữ xám đậm */
+}
+
+.cart-item-remove {
+    cursor: pointer; /* Con trỏ chuột chỉ tay */
+    color: #e74c3c; /* Màu đỏ */
+}
+
+.price-details {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    justify-content: space-between; /* Phân bổ không gian đều giữa các phần tử */
+    flex-wrap: wrap; /* Các phần tử có thể xuống dòng */
+}
+.price-row {
+    width: 48%; /* Chiều rộng mỗi hàng là 48% */
+    margin-bottom: 10px; /* Khoảng cách phía dưới */
+}
+
+.price-row h6 {
+    font-size: 16px; /* Kích thước chữ */
+    color: #000000; /* Màu chữ xám nhạt */
+}
+
+.price-row h6:first-child {
+    margin-bottom: 10px; /* Khoảng cách phía dưới */
+}
+
+.shipping-fee {
+    color: green; /* Màu xanh lá */
+}
+
+.apply {
+    background-color: #d32222; 
+    color: #ffffff; /* Màu chữ trắng */
+    border: none; /* Không viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột chỉ tay */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+    margin-top: 20px; /* Khoảng cách phía trên */
+    width: calc(100% - 10px); /* Chiều rộng trừ đi 100px */
+
+}
+.pay-now {
+    background-color: #007bff; /* Màu nền xanh */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Không viền */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột chỉ tay */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+    margin-top: 50px; /* Khoảng cách phía trên */
+    width: calc(100%); /* Chiều rộng trừ đi 100px */
+
+}
+.apply:hover, .pay-now:hover {
+    background-color: #c2d231; /* Màu nền xanh đậm khi hover */
+}
+
+.voucher {
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    border-radius: 5px; /* Bo góc */
+    width: calc(100% - 10px); /* Chiều rộng trừ đi 100px */
+    margin-top: 20px; /* Khoảng cách phía trên */
+
+}
+
+form {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    align-items: center; /* Căn giữa theo trục dọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.price-details .price-row h6:last-child {
+    font-weight: 700; /* Độ dày chữ */
+    color: #333; /* Màu chữ xám đậm */
+}
+
+@media (max-width: 768px) {
+    .price-row {
+        width: 100%; /* Chiều rộng mỗi hàng là 100% trên màn hình nhỏ */
+    }
+
+    .cart-item {
+        flex-direction: column; /* Các phần tử xếp theo cột */
+        align-items: flex-start; /* Căn trái */
+    }
+}

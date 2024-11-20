@@ -1,0 +1,102 @@
+#banner {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    background-image: url("upload/bg.jpg"); /* Đặt ảnh nền cho banner */
+    height: 600px; /* Chiều cao của banner là 600px */
+    display: flex; /* Sử dụng Flexbox để bố trí các phần tử con */
+    position: relative; /* Đặt vị trí tương đối để sử dụng cho các phần tử con có vị trí tuyệt đối */
+}
+
+#banner .box-left, #banner .box-right {
+    width: 50%; /* Mỗi phần tử chiếm 50% chiều rộng của banner */
+}
+
+#banner .box-left h2 {
+    font-size: 48px; /* Kích thước chữ là 48px */
+    margin-top: 50px; /* Khoảng cách từ trên xuống là 50px */
+    color: #36cbed; /* Màu chữ xanh da trời */
+    padding-left: 40px; /* Khoảng cách từ trái vào là 40px */
+}
+
+#banner .box-left p {
+    color: #ffffff; /* Màu chữ trắng */
+    padding-left: 40px; /* Khoảng cách từ trái vào là 40px */
+}
+
+#banner .box-left button {
+    width: 191px; /* Chiều rộng nút là 191px */
+    height: 40px; /* Chiều cao nút là 40px */
+    margin-left: 41px; /* Khoảng cách từ trái vào là 41px */
+    background: #36cbed; /* Màu nền của nút là xanh da trời */
+    border: none; /* Không viền */
+    outline: none; /* Không viền ngoài khi focus */
+    color: #000000; /* Màu chữ đen */
+    font-weight: bold; /* Chữ đậm */
+    border-radius: 20px; /* Bo góc nút là 20px */
+    transition: 0.4s; /* Thời gian chuyển đổi là 0.4 giây */
+}
+
+#banner .box-left button:hover {
+    background: rgb(209, 252, 16); /* Màu nền của nút khi hover là xanh lá cây */
+}
+
+#banner .box-right {
+    padding-left: 200px; /* Khoảng cách từ trái vào là 200px */
+    display: flex; /* Sử dụng Flexbox để bố trí các phần tử con */
+    justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+}
+
+#banner .box-right img {
+    margin: 0px 10px; /* Khoảng cách giữa các ảnh là 10px */
+    animation: animation 3s infinite linear; /* Áp dụng animation lặp vô hạn với thời gian 3s */
+    height: 80%; /* Chiều cao ảnh là 80% chiều cao của phần tử cha */
+}
+
+#banner .box-right img:nth-child(1) {
+    animation-delay: 0.5s; /* Animation bắt đầu sau 0.5 giây */
+}
+
+#banner .box-right img:nth-child(2) {
+    animation-delay: 1s; /* Animation bắt đầu sau 1 giây */
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px); /* Vị trí ban đầu */
+    }
+    50% {
+        transform: translateY(-10px); /* Dịch chuyển lên trên 10px */
+    }
+    100% {
+        transform: translateY(0px); /* Trở lại vị trí ban đầu */
+    }
+}
+
+.to-bottom {
+    position: absolute; /* Định vị tuyệt đối so với phần tử cha */
+    bottom: -40px; /* Đặt ở dưới cách phần tử cha 40px */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch chuyển vị trí sang trái 50% chiều rộng của nó để căn giữa */
+}
+/* footer */
+#footer {
+    text-align: center; /* Căn giữa văn bản */
+    padding: 20px; /* Khoảng cách bên trong là 20px */
+    background-color: #000000; /* Màu nền đen */
+}
+
+.social-icons {
+    margin-top: 10px; /* Khoảng cách từ trên xuống là 10px */
+}
+
+.social-icons a {
+    color: #000; /* Màu biểu tượng là đen */
+    margin: 0 10px; /* Khoảng cách giữa các biểu tượng là 10px */
+    text-decoration: none; /* Không có gạch chân */
+    font-size: 24px; /* Kích thước chữ là 24px */
+}
+
+.social-icons a:hover {
+    color: #000000; /* Màu của biểu tượng khi hover là đen */
+}
+

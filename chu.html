@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            overflow: hidden;
+            border-right: 0.15em solid yellow;
+            white-space: nowrap;
+            letter-spacing: 0.15em;
+            animation: typing 15s steps(40, end) infinite, mouse 0.65s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0;
+            }
+        }
+
+        @keyframes mouse {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        BLESSING KEYBOARD - Thương Hiệu Việt Nam - 163/50/2 Bùi Văn Ngữ, Hiệp Thành, Q12, Tp. Hồ Chí Minh
+    </div>
+</body>
+</html>
